@@ -19,3 +19,8 @@ Route::get('/', function () {
 
 // Dashboad
 Route::get('/dashboard', 'Admin\HomeController@admin' )->name('admin.home');
+
+// Member
+Route::get('/member', 'Admin\MemberController@listMember')->name('admin.listMember');
+Route::get('/member/add-member', 'Admin\MemberController@addMember')->name('admin.addMember');
+Route::get('/member/edit-member', 'Admin\MemberController@editMember')->name('admin.editMember');
